@@ -1,5 +1,8 @@
 # Setting-Up-Proxmox-Nginx-Proxy-Manager-and-CrowdSec
 
+
+Voici un schéma simplifié illustrant l'infrastructure que nous allons mettre en place, sans le pare-feu en amont du Nginx Proxy Manager.
+
 ![shema-projet](shema-projet.png)
 
 ## Installation de CrowdSec et Configuration sur nos Serveurs Proxmox et Nginx Proxy Manager
