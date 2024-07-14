@@ -1,6 +1,6 @@
 # Setting-Up-Proxmox-Nginx-Proxy-Manager-and-CrowdSec
 
-
+![shema-projet](shema-projet.png)
 
 ## Installation de CrowdSec et Configuration sur nos Serveurs Proxmox et Nginx Proxy Manager
 
