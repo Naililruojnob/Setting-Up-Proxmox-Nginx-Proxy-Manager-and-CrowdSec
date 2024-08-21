@@ -10,9 +10,9 @@ services:
     environment:
       DB_MYSQL_HOST: "db"
       DB_MYSQL_PORT: 3306
-      DB_MYSQL_USER: "npm"
+      DB_MYSQL_USER: "${MYSQL_DATABASE}"
       DB_MYSQL_PASSWORD: "${MYSQL_USER_PASSWORD}"
-      DB_MYSQL_NAME: "npm"
+      DB_MYSQL_NAME: "${MYSQL_USER}"
       # Uncomment this if IPv6 is not enabled on your host
       # DISABLE_IPV6: 'true'
     volumes:
@@ -26,8 +26,8 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
-      MYSQL_DATABASE: 'npm'
-      MYSQL_USER: 'npm'
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+      MYSQL_USER: "${MYSQL_USER}"
       MYSQL_PASSWORD: "${MYSQL_USER_PASSWORD}"
     volumes:
       - /npm/data/mysql:/var/lib/mysql
